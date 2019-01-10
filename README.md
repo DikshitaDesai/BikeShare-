@@ -45,4 +45,4 @@ earliest, most recent, most common year of birth (only available for NYC and Chi
 
 
 # Reference
-In this project, I have used data provided by Udacity portal. I have compared the system usage between three large cities: Chicago, New York City, and Washington, DC. Throughout this project I did a lot of googling and used various little pieces of code from places like stackexchange, the python documentation, and quora.
+In this project, I have used data provided by Udacity portal. I have compared the system usage between three large cities: Chicago, New York City, and Washington, DC. Throughout this project I did a lot of googling and used various little pieces of code from places like stackexchange, the python documentation, and quora. Initially it was difficult for me to figure out as to how to go about with the process as I'm totally new to coding. I decided to view how others have done this project before. I first studied these codes https://github.com/xhlow/udacity-bikeshare-project https://github.com/scientificharsha/Udacity-DA_Nanodegree--US-BikeShare https://github.com/philribbens/udacity-bikeshare-project and then went ahead with the project.
