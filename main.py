@@ -3,11 +3,6 @@ from datetime import datetime
 from datetime import timedelta
 import time
 
-## Filenames
-#chicago = 'chicago.csv'
-#new_york_city = 'new_york_city.csv'
-#washington = 'washington.csv'
-
 
 def get_city():
     '''Asks the user for a city and returns the filename for that city's bike share data.
@@ -20,7 +15,7 @@ def get_city():
     city = ''
     while city.lower() not in ['chicago', 'new york', 'washington']:
         city = input('\nHello! Let\'s explore some US bikeshare data!\n'
-                     'Would you like to see data for Chicago, New York, or'
+                     'Which city do you prefer Chicago, New York, or'
                      ' Washington?\n')
         if city.lower() == 'chicago':
             return 'chicago.csv'
@@ -29,7 +24,7 @@ def get_city():
         elif city.lower() == 'washington':
             return 'washington.csv'
         else:
-            print('Sorry, I do not understand your input. Please input either '
+            print('Sorry, Invalid input. Please input either '
                   'Chicago, New York, or Washington.')
 
 def get_time_period():
@@ -45,7 +40,7 @@ def get_time_period():
         time_period = input('\nWould you like to filter the data by month, day,'
                             ' or not at all? Type "none" for no time filter.\n')
         if time_period.lower() not in ['month', 'day', 'none']:
-            print('Sorry, I do not understand your input.')
+            print('Sorry, Invalid input.')
     return time_period
 
 def get_month():
@@ -63,7 +58,7 @@ def get_month():
         month_input = input('\nWhich month? January, February, March, April,'
                             ' May, or June?\n')
         if month_input.lower() not in months_dict.keys():
-            print('Sorry, I do not understand your input. Please type in a '
+            print('Sorry, Invalid input. Please type in a '
                   'month between January and June')
     month = months_dict[month_input.lower()]
     return ('2017-{}'.format(month), '2017-{}'.format(month + 1))
@@ -87,7 +82,7 @@ def get_day():
                 day = int(day)
                 is_int = True
             except ValueError:
-                print('Sorry, I do not understand your input. Please type your'
+                print('Sorry, Invalid input. Please type your'
                       ' response as an integer.')
                 day = input('\nWhich day? Please type your response as an integer.\n')
         try:
